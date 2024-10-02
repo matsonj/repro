@@ -1,0 +1,9 @@
+
+target/
+dbt_packages/
+logs/
+myenv/
+data/*.csv
+.env
+.user.yml
+*.duckdb

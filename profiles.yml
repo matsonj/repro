@@ -1,0 +1,16 @@
+minimal_repro:
+  outputs:
+    local:
+      type: duckdb
+      schema: main
+      path: local.duckdb
+      threads: 1
+    prod:
+      type: duckdb
+      schema: main
+      path: prod.duckdb
+    md:
+      type: duckdb
+      schema: main
+      path: "md:"
+  target: md

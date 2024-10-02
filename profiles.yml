@@ -3,4 +3,4 @@ minimal-repro:
   outputs:
     user:
       type: duckdb
-      path: "md:data_hub_prod_a_fake?motherduck_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJpbGxAaHViaWZpLmNvbSIsInNlc3Npb24iOiJiaWxsLmh1YmlmaS5jb20iLCJwYXQiOiJ6SWZLNmhNR0RFbUVUbXFzWGRoRkhSeEJkelBVUlpiYUZfUFB0M2Q0UEpjIiwidXNlcklkIjoiNDg0YzA4NmYtMmI1Zi00YmMwLWFhMGYtYWM2Y2RjZjk1Y2FlIiwiaXNzIjoibWRfcGF0IiwiaWF0IjoxNzI3OTAwMjgyfQ.7K9-PUN8oCUMvVR4ljqOkYDxkG2fEL84mZEvjcYG5cg"
+      path: "md:"

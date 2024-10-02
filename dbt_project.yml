@@ -1,10 +1,10 @@
 config-version: 2
 
 name: "minimal_repro"
-version: "3.0.0"
-require-dbt-version: ">=1.5.0"
+version: '1.0.0'
+config-version: 2
 
-profile: minimal_repro # Put your profile here
+profile: minimal-repro # Put your profile here
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]
@@ -19,16 +19,18 @@ clean-targets:
   - "dbt_packages"
 
 vars:
-  "build_env": "dev"
-  "org_prefix": "123"
+  "build_env": "junk"
+  "org_prefix": "junk"
 
 seeds:
   minimal_repro:
-    +schema: raw
-    +database: "test_db"
+    +schema: transient
 
 models:
+  +materialized: table
   minimal_repro:
-    +database: "test_db"
-    +schema: models
-    +materialized: table
+    intermediate:
+      +schema: transient
+    reporting:
+      +database: reporting
+      +schema: reporting

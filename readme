@@ -1,0 +1,1 @@
+dbt build --vars '{"build_env":"PROD","org_prefix":"a_fake"}'

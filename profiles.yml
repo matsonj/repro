@@ -3,4 +3,4 @@ minimal-repro:
   outputs:
     user:
       type: duckdb
-      path: "md:"
+      path: "md:data_hub_prod_a_fake"
